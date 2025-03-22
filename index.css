@@ -235,6 +235,24 @@
             
         }
     }
+
+    .container{
+        font-size: 15px;
+    }
+    .container{
+        .footer-container{
+            .about-us{
+                .b{
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+
+
+
+
     
 }
 @media screen and (max-width: 800px){
@@ -339,7 +357,22 @@
         }
     }
 }
+.container{
+    .footer-container{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
+}
+@media screen and(max-width: 600px){
+  .container{
+    .footer-container{
+        .about-us .opening-hours .contact-us{
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+  }
+}
+
 @media screen and (max-width: 356px){
     .kontainer{
         .food-lover-container{
@@ -543,7 +576,7 @@
 
 .form-data{
     padding: 3rem;
-    width: 50%;
+    width: 70%;
     color: white;
     background-color: rgba(255, 68, 0, 0.445);
     background-size: auto;
@@ -574,7 +607,7 @@
     padding: 0.8rem 0;
 }
 .form-data form input{
-    width: 49.5%;
+    width: 100%;
     padding: 0.7rem 0.4rem;
     margin-bottom: 1rem;
     border: none;
@@ -584,7 +617,7 @@
     width: 100%;
     padding: 1rem 0.4rem
 }
-.form-data form button{
+.form-data form a{
  display: inline-block;
  width: 100%;
  border: none;
@@ -593,8 +626,11 @@
  border-radius: 5px;
  cursor: pointer;
  transition: all 0.5s ease-in-out;
+ text-decoration: none;
+ text-align: center;
+ color: #000;
 }
-.form-data form button{
+.form-data form a{
     background-color: #ccc;
 }
 .deal-today{
@@ -721,4 +757,49 @@
 .imgs-cards .price{
     color: rgba(255, 0, 0, 0.589);
     font-size: 1.5rem;
+}
+
+.footer{
+    background-color: #212121;
+    padding: 4rem 0;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.about-us h2{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.about-us p{
+    line-height: 1.8rem;
+    padding-bottom: 2rem;
+}
+.opening-hours p{
+    padding-top: 12px;
+}
+.footer-container h2{
+    padding-bottom: 3rem;
+    color: goldenrod;
+}
+.footer-container p{
+    font-size: 20px;
+}
+.day{
+    color: goldenrod;
+}
+.day span{
+    color: white;
+}
+.contact-us h3{
+    color: goldenrod;
+}
+.add{
+    color: goldenrod;
 }
